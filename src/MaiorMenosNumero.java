@@ -4,10 +4,14 @@ public class MaiorMenosNumero {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] numRecebido = new int[5];
+
+        System.out.println("Digite o número 1");
+        numRecebido[0] = scanner.nextInt();
         int maiorNum = numRecebido[0];
         int menorNum = numRecebido[0];
 
-        for (int i = 0; i < 5; i++) {
+
+        for (int i = 1; i < 5; i++) {
             System.out.println("Digite o número " + (i + 1) + ":");
             numRecebido[i] = scanner.nextInt();
 
